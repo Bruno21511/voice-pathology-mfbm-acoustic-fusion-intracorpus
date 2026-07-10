@@ -18,8 +18,9 @@
 ## Main Result Overview
 
 <p align="center">
-  <img src="results/figures/06_Accuracy_results.png" width="750">
+  <img src="results/figures/06_Accuracy_results.png" width="800" alt="Classification accuracy for each paper-based configuration, and dataset">
 </p>
+
 
 > Clear improvement from feature fusion in MEEI, but no clear advantage of fusion is observed in USP.
 
@@ -451,7 +452,7 @@ In contrast, the USP dataset shows markedly weaker performance. Here, balanced c
 To investigate this ambiguous result in the USP dataset further, the confusion matrices for both the default and balanced weight configurations are presented below.
 
 <p align="center">
-  <img src="results/figures/07_myUSP_acoustic_configs_confusion_matrices.png" width="750" alt="Confusion matrices for acoustic-only classification in sMEEI and USP datasets">
+  <img src="results/figures/07_myUSP_acoustic_configs_confusion_matrices.png" width="500" alt="Confusion matrices for acoustic-only classification in sMEEI and USP datasets">
 </p>
 
 The confusion matrices confirm this pattern directly. Without balanced weights, the classifier almost entirely fails to identify the healthy class: of the 15 healthy subjects on average, only 0.7 are correctly classified, against 14.3 misclassified as pathological. The pathological class fares better, with 29.9 of the 32 subjects correctly identified.
