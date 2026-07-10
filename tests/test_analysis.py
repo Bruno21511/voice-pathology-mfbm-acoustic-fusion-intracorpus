@@ -7,13 +7,13 @@ import pytest
 from src.analysis.experiment_types import ExperimentConfig, ExperimentResult
 from src.analysis.apply_feature_selection import apply_feature_selection
 from src.analysis.run_intracorpus import run_intracorpus
-from src.analysis.run_experiment_grid import run_experiment_grid
+from src.analysis.run_intracorpus_grid import run_intracorpus_grid
 
 
 # =====================================================================
 # 1. GRID RUNNER TESTS (ORCHESTRATION & COMBINATORICS)
 # =====================================================================
-@patch("src.analysis.run_experiment_grid.build_Xy")
+@patch("src.analysis.run_intracorpus_grid.build_Xy")
 def test_run_experiment_grid_combinatorics(mock_build_Xy):
     """Verifies that the grid orchestrator correctly parses datasets dictionary,
 
@@ -40,18 +40,17 @@ def test_run_experiment_grid_combinatorics(mock_build_Xy):
     mock_run_function.return_value = mock_result_obj
 
     # 3. Execute Grid Orchestrator (Intra-corpus configuration)
-    results = run_experiment_grid(
+    results = run_intracorpus_grid(
         run_function=mock_run_function,
         datasets=datasets_mock,
         train_corpus="mysMEEI",
-        test_corpus=None,  # Should fall back internally to "mysMEEI"
         feature_sets=feature_sets_mock,
         num_iters=10,
     )
 
     # 4. Assertions
-    # build_Xy should be called twice (once for train_df, once for test_df)
-    assert mock_build_Xy.call_count == 2
+    # build_Xy deve ser chamado apenas 1 vez pois treino e teste usam o mesmo corpus (intra-corpus)
+    assert mock_build_Xy.call_count == 1
     
     # run_function should be called exactly once per feature set (3 sets = 3 calls)
     assert mock_run_function.call_count == 3
