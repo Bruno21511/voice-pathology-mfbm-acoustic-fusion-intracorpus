@@ -1,0 +1,7 @@
+train_corpus;test_corpus;features;Accuracy;AUC
+mysMEEI;mysMEEI;acoustic;83.7 ± 0.8;0.878 ± 0.006
+mysMEEI;mysMEEI;spectral_paper;87.8 ± 1.2;0.933 ± 0.009
+mysMEEI;mysMEEI;combined_paper;92.3 ± 1.2;0.962 ± 0.004
+myUSP;myUSP;acoustic;65.0 ± 2.3;0.621 ± 0.044
+myUSP;myUSP;spectral_paper;97.2 ± 2.6;0.997 ± 0.004
+myUSP;myUSP;combined_paper;94.7 ± 1.5;0.990 ± 0.005

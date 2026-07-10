@@ -1,0 +1,5 @@
+train_corpus;test_corpus;metric;acoustic;spectral;combined;sep_raw;sep_a1;sep_a2
+mysMEEI;mysMEEI;accuracy;84.2%;87.8%;89.4%;90.0%;90.1%;89.8%
+mysMEEI;mysMEEI;auc;0.874;0.927;0.955;0.959;0.958;0.956
+myUSP;myUSP;accuracy;64.5%;88.8%;89.1%;87.6%;88.8%;88.4%
+myUSP;myUSP;auc;0.644;0.961;0.968;0.959;0.964;0.964

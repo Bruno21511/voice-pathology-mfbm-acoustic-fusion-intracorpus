@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+
+def build_Xy(df):
+    """
+    Builds feature matrix X aligned with article setup.
+
+    Uses only first 12 MFBM bands (out of 20), discarding last 8.
+    """
+
+    # --------------------------
+    # Convert to arrays
+    # --------------------------
+    mean_mfbm = np.vstack(df["mean_mfbm"].values)[:, :12]
+    std_mfbm  = np.vstack(df["std_mfbm"].values)[:, :12]
+
+    # --------------------------
+    # Scalar features
+    # --------------------------
+    jitter = df["localjitter"].values.reshape(-1, 1)
+    shimmer = df["localshimmer"].values.reshape(-1, 1)
+    hnr = df["hnr"].values.reshape(-1, 1)
+
+    # --------------------------
+    # Final X
+    # --------------------------
+    X = np.hstack([
+        mean_mfbm,   # (N, 12)
+        std_mfbm,    # (N, 12)
+        jitter,
+        shimmer,
+        hnr
+    ])
+    
+    y = df["class"].values
+
+    return X, y
