@@ -3,6 +3,10 @@
 
 > Machine learning analysis of voice pathology (Reinke's Edema and Vocal Nodules) discrimination using spectral (MFBM) and acoustic features (jitter, shimmer, HNR), exploring intra-dataset fusion dynamics and PCA sensitivity.
 
+![CI](https://github.com/Bruno21511/paper-voice-pathology-mfbm/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Extension](https://img.shields.io/badge/Extension-CENTERIS_2025-lightgrey)
+
 ---
 
 ## Key Highlights
@@ -373,7 +377,7 @@ This behaviour is consistent with the curse of dimensionality: as the feature sp
 **Accuracy summary across datasets (%)**
 
 | Dataset | Acoustic | Spectral | Combined | sep_raw | sep_a1 | sep_a2 |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | MEEI | 84.2% | 87.8% | 89.4% | 90.0% | **90.1%** | 89.8% |
 | USP | 64.5% | 88.8% | **89.1%** | 87.6% | 88.8% | 88.4% |
 
