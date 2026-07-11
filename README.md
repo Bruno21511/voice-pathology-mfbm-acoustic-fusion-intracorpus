@@ -64,7 +64,7 @@ The present work expands the original study by applying the methodology to a sec
 dataset (USP), exploring additional PCA configurations, and analysing the stability 
 of spectral-acoustic feature fusion across datasets.
 
-A follow-up inter-corpus extension study is available here: [LINK]
+A follow-up inter-corpus extension study is available [here](https://github.com/Bruno21511/voice-pathology-mfbm-acoustic-fusion-intercorpus):
 
 ---
 
