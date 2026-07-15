@@ -3,9 +3,13 @@
 
 > Machine learning analysis of voice pathology (Reinke's Edema and Vocal Nodules) discrimination using spectral (MFBM) and acoustic features (jitter, shimmer, HNR), exploring intra-dataset fusion dynamics and PCA sensitivity.
 
+This repository corresponds to **Part I** of a two-part research extension based on the CENTERIS 2025 publication.<br>
+• Part I – Intra-corpus analysis (this repository) <br>
+• Part II – Cross-corpus analysis ([available here](https://github.com/Bruno21511/voice-pathology-mfbm-acoustic-fusion-intercorpus))
+
 ![CI](https://github.com/Bruno21511/paper-voice-pathology-mfbm/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Extension](https://img.shields.io/badge/Extension-CENTERIS_2025-lightgrey)
+![Research](https://img.shields.io/badge/Research-Extension_of_CENTERIS_2025-lightgrey)
 
 ---
 
