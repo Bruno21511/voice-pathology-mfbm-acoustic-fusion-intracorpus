@@ -153,7 +153,7 @@ conditioned by the **discriminative power of the acoustic feature set** in each 
 │   │   └── mysMEEI_stats.csv           # Stats (total and per class age and gender distribution)
 │   │ 
 │   ├── myUSP
-│   │   └── myUSP.csv                	  # Metadata (filename, age, gender, class label)
+│   │   └── myUSP.csv                   # Metadata (filename, age, gender, class label)
 │   │   └── myUSP_stats.csv             # Stats (total and per class age and gender distribution)
 │   │ 
 │   └── processed/
