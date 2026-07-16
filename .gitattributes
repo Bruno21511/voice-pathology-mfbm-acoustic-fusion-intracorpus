@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Treat notebooks as documentation, not code, for language stats
+*.ipynb linguist-documentation
